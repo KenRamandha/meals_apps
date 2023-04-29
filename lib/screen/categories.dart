@@ -9,12 +9,14 @@ class CategoriesScreen extends StatelessWidget {
   const CategoriesScreen({
     super.key,
     required this.onToggleFavorite,
+    required this.availableMelas,
   });
 
   final void Function(Meal meal) onToggleFavorite;
+  final List<Meal> availableMelas;
 
   void _selectedCategory(BuildContext context, Categories category) {
-    final filteredMeals = dummyMeals
+    final filteredMeals = availableMelas
         .where((meal) => meal.categories.contains(category.id))
         .toList();
 
