@@ -61,7 +61,7 @@ class MealItem extends StatelessWidget {
                       textAlign: TextAlign.center,
                       softWrap: true,
                       overflow: TextOverflow.ellipsis,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
                         color: Colors.white,
